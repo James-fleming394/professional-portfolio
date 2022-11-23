@@ -1,4 +1,4 @@
-**James Fleming Professional Portfolio**
+# **James Fleming Professional Portfolio**
  
 ## **About Me**
  
@@ -27,7 +27,17 @@ Welcome to my portfolio application.  Inside, you will find my contact informati
  
 ## **Tech Stack**
  
-My current Tech Stack includes Javascript, React, Express, SQL, PostgreSQL, HTML, CSS, and Sequelize. I work with both frontend and backend engineering.
+My current Tech Stack includes:
+- Javascript 
+- React 
+- Express 
+- SQL 
+- PostgreSQL 
+- HTML 
+- CSS
+- Sequelize
+
+I work with both frontend and backend engineering.
  
 I am currently freelancing while looking for work!
 
