@@ -35,6 +35,7 @@ const NavBar = () => {
                 <div className="socials">
                     <a href="https://www.linkedin.com/in/james--fleming/"><img src="https://png.pngitem.com/pimgs/s/32-326086_linkedin-black-icon-png-image-free-download-searchpng.png" alt="LinkedIn"/></a>
                     <a href="https://github.com/James-fleming394"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub"/></a>
+                    <button className="button-contact" onClick={() => console.log('working')}>Contact Me!</button>
                 </div>
             </span>
         </Nav>
