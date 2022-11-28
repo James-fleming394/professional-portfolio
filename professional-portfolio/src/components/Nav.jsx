@@ -21,7 +21,7 @@ const NavBar = () => {
         <Navbar.Brand href="home">Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="me-auto">
+        <Nav className="topbar">
             <Nav.Link href="about">About</Nav.Link>
             <NavDropdown title="Projects" id="collasible-nav-dropdown">
             <NavDropdown.Item href="project1">Project1</NavDropdown.Item>
@@ -31,7 +31,12 @@ const NavBar = () => {
             <NavDropdown.Item href="project3">Project3</NavDropdown.Item>
             <NavDropdown.Divider />
             </NavDropdown>
-            <Nav.Link href="contact">Contact</Nav.Link>
+            <span className="icons">
+                <div className="socials">
+                    <a href="https://www.linkedin.com/in/james--fleming/"><img src="https://png.pngitem.com/pimgs/s/32-326086_linkedin-black-icon-png-image-free-download-searchpng.png" alt="LinkedIn"/></a>
+                    <a href="https://github.com/James-fleming394"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub"/></a>
+                </div>
+            </span>
         </Nav>
         </Navbar.Collapse>
         </Container>
