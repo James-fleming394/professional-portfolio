@@ -4,9 +4,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 
 const NavBar = () => {
+
+    const [activeUser, setActiveUser] = useState('home');
+    const [userScroll, setUserScroll] = useState(false)
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -23,14 +27,12 @@ const NavBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="topbar">
             <Nav.Link href="about">About</Nav.Link>
-            <NavDropdown title="Projects" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="project1">Project1</NavDropdown.Item>
-            <NavDropdown.Item href="project2">
-                Project2
-            </NavDropdown.Item>
-            <NavDropdown.Item href="project3">Project3</NavDropdown.Item>
-            <NavDropdown.Divider />
-            </NavDropdown>
+                <NavDropdown title="Projects" id="collasible-nav-dropdown">
+                    <NavDropdown.Item href="project1">Project1</NavDropdown.Item>
+                    <NavDropdown.Item href="project2">Project2</NavDropdown.Item>
+                    <NavDropdown.Item href="project3">Project3</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                </NavDropdown>
             <span className="icons">
                 <div className="socials">
                     <a href="https://www.linkedin.com/in/james--fleming/"><img src="https://png.pngitem.com/pimgs/s/32-326086_linkedin-black-icon-png-image-free-download-searchpng.png" alt="LinkedIn"/></a>
