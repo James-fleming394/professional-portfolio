@@ -4,13 +4,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 const NavBar = () => {
 
     const [activeUser, setActiveUser] = useState('home');
-    const [userScroll, setUserScroll] = useState(false)
+    const [userScroll, setUserScroll] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => {
+            if (window.scrollY > 50) {
+                setUserScroll(true)
+            } else {
+                setUserScroll(false)
+            }
+        }
+
+        window.addEventListener("scroll", onScroll);
+
+        return() => window.removeEventListener("scroll", onScroll);
+    })
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
