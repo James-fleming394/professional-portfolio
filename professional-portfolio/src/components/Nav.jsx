@@ -24,10 +24,14 @@ const NavBar = () => {
         window.addEventListener("scroll", onScroll);
 
         return() => window.removeEventListener("scroll", onScroll);
-    })
+    }, []);
+
+    const onUpdateActiveUser = (value) => {
+        setActiveUser(value);
+    }
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className={userScroll ? "scroll" : ""}>
             <div>
             <Link className='link-pic' to='/home'>
                 <img id="link-picture"
@@ -36,15 +40,15 @@ const NavBar = () => {
                 /> </Link>
             </div>
         <Container>
-        <Navbar.Brand href="home">Home</Navbar.Brand>
+        <Navbar.Brand href="home" className={activeUser === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('home')}>Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="topbar">
-            <Nav.Link href="about">About</Nav.Link>
+            <Nav.Link href="about" className={activeUser === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('about')}>About</Nav.Link>
                 <NavDropdown title="Projects" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="project1">Project1</NavDropdown.Item>
-                    <NavDropdown.Item href="project2">Project2</NavDropdown.Item>
-                    <NavDropdown.Item href="project3">Project3</NavDropdown.Item>
+                    <NavDropdown.Item href="project1" className={activeUser === 'project1' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('project1')}>Project1</NavDropdown.Item>
+                    <NavDropdown.Item href="project2" className={activeUser === 'project2' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('project2')}>Project2</NavDropdown.Item>
+                    <NavDropdown.Item href="project3" className={activeUser === 'project3' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('project3')}>Project3</NavDropdown.Item>
                     <NavDropdown.Divider />
                 </NavDropdown>
             <span className="icons">
