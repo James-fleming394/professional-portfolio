@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 
@@ -31,38 +30,30 @@ const NavBar = () => {
     }
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className={userScroll ? "scroll" : ""}>
-            <div>
-            <Link className='link-pic' to='/home'>
-                <img id="link-picture"
-                    src="https://i.imgur.com/PbKVQzs.jpg"
-                    alt="JF"
-                /> </Link>
-            </div>
-        <Container>
-        <Navbar.Brand href="home" className={activeUser === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('home')}>Home</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="topbar">
-            <Nav.Link href="about" className={activeUser === 'about' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('about')}>About</Nav.Link>
-                <NavDropdown title="Projects" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="project1" className={activeUser === 'project1' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('project1')}>Project1</NavDropdown.Item>
-                    <NavDropdown.Item href="project2" className={activeUser === 'project2' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('project2')}>Project2</NavDropdown.Item>
-                    <NavDropdown.Item href="project3" className={activeUser === 'project3' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('project3')}>Project3</NavDropdown.Item>
-                    <NavDropdown.Divider />
-                </NavDropdown>
-            <span className="icons">
-                <div className="socials">
-                    <a href="https://www.linkedin.com/in/james--fleming/"><img src="https://png.pngitem.com/pimgs/s/32-326086_linkedin-black-icon-png-image-free-download-searchpng.png" alt="LinkedIn"/></a>
-                    <a href="https://github.com/James-fleming394"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub"/></a>
-                    <button className="button-contact" onClick={() => console.log('working')}>Contact Me!</button>
-                </div>
-            </span>
+    <Navbar bg="light" expand="lg" className={userScroll ? "scroll" : ""}>
+    <Container>
+        <Navbar.Brand href="/">
+            <img src="https://i.imgur.com/PbKVQzs.jpg" alt="Logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <span className="navbar-toggler-icon"></span>
+        <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+            <Nav.Link href="/" className={activeUser === '/' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('/')}>Home</Nav.Link>
+            <Nav.Link href="/about" className={activeUser === '/' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('/about')}>About</Nav.Link>
+            <NavDropdown title="Projects ▼" id="basic-nav-dropdown" className={activeUser === '/' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveUser('/projects')}>
+            <NavDropdown.Item href="/project1">Project 1 Title</NavDropdown.Item>
+            <NavDropdown.Item href="/project2">Project 2 Title</NavDropdown.Item>
+            <NavDropdown.Item href="/project3">Project 3 Title</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="/futureprojects">Future Projects</NavDropdown.Item>
+            </NavDropdown>
         </Nav>
         </Navbar.Collapse>
-        </Container>
+    </Container>
     </Navbar>
-);
+    )
 }
 
 export default NavBar;
+
