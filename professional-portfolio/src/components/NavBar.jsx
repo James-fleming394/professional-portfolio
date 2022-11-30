@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from "react";
 import icon from '../assets//img/github-logo-icon.png'
 import icon1 from '../assets/img/linkedin-logo-icon.png'
+// import logo from '../assets/img/JF-logo.png'
 
 const NavBar = () => {
     const [activeUser, setActiveUser] = useState('/');
@@ -31,13 +32,13 @@ const NavBar = () => {
     return (
     <Navbar expand="lg" className={userScroll ? "userScroll": ""}>
         <Container>
-        <Navbar.Brand href="/">Logo goes here</Navbar.Brand>
+        <Navbar.Brand href="/home" className="Logo">James Fleming</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggle-icon">Icon goes here</span>
             </Navbar.Toggle> 
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-            <Nav.Link href="/" className={activeUser === '/' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('/')}>Home</Nav.Link>
+            <Nav.Link href="/home" className={activeUser === 'home' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('home')}>Home</Nav.Link>
             <Nav.Link href="/about" className={activeUser === 'about' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('about')}>About</Nav.Link>
             <Nav.Link href="/projects" className={activeUser === 'projects' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('projects')}>Projects</Nav.Link>
             </Nav>
