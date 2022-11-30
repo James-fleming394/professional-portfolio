@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from "react";
+import icon from '../assets//img/github-logo-icon.png'
+import icon1 from '../assets/img/linkedin-logo-icon.png'
 
 const NavBar = () => {
     const [activeUser, setActiveUser] = useState('/');
@@ -41,8 +43,8 @@ const NavBar = () => {
             </Nav>
         <span className="navbar-text">
             <div className="social-icons">
-                <a href="https://www.linkedin.com/in/james--fleming/">LinkedIn Icon Here</a>
-                <a href="https://github.com/James-fleming394">Github Icon Here</a>
+                <a href="https://www.linkedin.com/in/james--fleming/"><img src={icon1} alt="LinkedIn"></img></a>
+                <a href="https://github.com/James-fleming394"><img src={icon} alt="Github"></img></a>
             </div>
             <button className="connect-button" onClick={() => console.log('working')}><span>Connect</span></button>
         </span>
