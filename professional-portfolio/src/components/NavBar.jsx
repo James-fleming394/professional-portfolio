@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from "react";
 import icon from '../assets//img/github-logo-icon.png'
 import icon1 from '../assets/img/linkedin-logo-icon.png'
+import laptop from '../assets/img/laptop-code.png'
 // import logo from '../assets/img/JF-logo.png'
 
 const NavBar = () => {
@@ -32,7 +33,9 @@ const NavBar = () => {
     return (
     <Navbar expand="lg" className={userScroll ? "userScroll": ""}>
         <Container>
-        <Navbar.Brand href="/home" className="Logo">James Fleming</Navbar.Brand>
+        <Navbar.Brand href="/home" className="logo">
+            <img className="logo" src={laptop} alt="laptop" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggle-icon">Icon goes here</span>
             </Navbar.Toggle> 

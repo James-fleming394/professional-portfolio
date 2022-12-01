@@ -19,6 +19,10 @@ body {
 
 /* NavBar CSS */
 
+.logo {
+    width: 70px;
+}
+
 nav.navbar {
     background-color: grey;
     padding: 18px 0;
