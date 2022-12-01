@@ -6,6 +6,10 @@ import HTML from '../assets/img/html.png';
 import CSS from '../assets/img/css.png';
 import JS from '../assets/img/js.png';
 import REACT from '../assets/img/react.png';
+import DEBUG from '../assets/img/debug.png';
+import VUE from '../assets/img/vue.png';
+import MONGO from '../assets/img/database.png';
+import SQL from '../assets/img/table.png';
 
 const Skills = () => {
     const responsive = {
@@ -50,6 +54,22 @@ const Skills = () => {
                             <div className="item">
                                 <img className="skills-icon" src={REACT} alt="React logo" />
                                 <h5>React</h5>
+                            </div>
+                            <div className="item">
+                                <img className="skills-icon" src={DEBUG} alt="Debug logo" />
+                                <h5>Debugging</h5>
+                            </div>
+                            <div className="item">
+                                <img className="skills-icon" src={VUE} alt="Vue logo" />
+                                <h5>Vue</h5>
+                            </div>
+                            <div className="item">
+                                <img className="skills-icon" src={MONGO} alt="Mongo logo" />
+                                <h5>MongoDB</h5>
+                            </div>
+                            <div className="item">
+                                <img className="skills-icon" src={SQL} alt="PostreSQL logo" />
+                                <h5>PostgreSQL</h5>
                             </div>
                         </Carousel>
                     </div>
