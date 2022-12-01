@@ -33,8 +33,7 @@ const Skills = () => {
                 <Row>
                     <Col>
                     <div className="skill-box">
-                        <h2>Skills</h2>
-                        <p>Skill info goes here</p>
+                        <h2>Web Development Skills</h2>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
                                 <img className="skills-icon" src={HTML} alt="html logo" />
