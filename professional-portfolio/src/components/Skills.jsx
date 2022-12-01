@@ -10,6 +10,7 @@ import DEBUG from '../assets/img/debug.png';
 import VUE from '../assets/img/vue.png';
 import MONGO from '../assets/img/database.png';
 import SQL from '../assets/img/table.png';
+import PYTHON from '../assets/img/python.png';
 
 const Skills = () => {
     const responsive = {
@@ -66,6 +67,10 @@ const Skills = () => {
                             <div className="item">
                                 <img className="skills-icon" src={MONGO} alt="Mongo logo" />
                                 <h5>MongoDB</h5>
+                            </div>
+                            <div className="item">
+                                <img className="skills-icon" src={PYTHON} alt="Python logo" />
+                                <h5>Python</h5>
                             </div>
                             <div className="item">
                                 <img className="skills-icon" src={SQL} alt="PostreSQL logo" />
