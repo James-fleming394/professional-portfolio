@@ -11,6 +11,8 @@ import prjImg6 from '../assets/img/Brewski-profile.png';
 import prjImg7 from '../assets/img/home-pageschool.png';
 import prjImg8 from '../assets/img/course-page.png';
 import prjImg9 from '../assets/img/student-page.png';
+import prjImg10 from '../assets/img/Menu.png';
+import prjImg11 from '../assets/img/plate.png';
 
 const Projects = () => {
     const project1 = [
@@ -61,6 +63,18 @@ const Projects = () => {
             description: "Once registered, users can sign in here",
             img: prjImg9
         }
+    ]
+    const project3 = [
+        {
+            title: "Explorify Park Menu",
+            description: "Green Tree School is a grading and GPA calculator web application",
+            img: prjImg10
+        },
+        {
+            title: "Explorify Park Menu",
+            description: "Using Auth, users will need to register in order to access the review's sections of the site",
+            img: prjImg11
+        },
     ]
 
     return (
@@ -113,9 +127,12 @@ const Projects = () => {
                     <Tab.Pane eventKey="third">
                         <Row>
                             {
-                                project1.map((project, index) => {
+                                project3.map((project, index) => {
                                     return (
-                                        <h6>{project.title}</h6>
+                                        <ProjectCard
+                                        key={index}
+                                        {...project}
+                                        />
                                     )
                                 })
                             }
