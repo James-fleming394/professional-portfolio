@@ -55,24 +55,24 @@ const Projects = () => {
         },
         {
             title: "Green Tree School",
-            description: "Using Auth, users will need to register in order to access the review's sections of the site",
+            description: "Users can navigate through a school's grading system to see courses and students within each course",
             img: prjImg8
         },
         {
             title: "Green Tree School",
-            description: "Once registered, users can sign in here",
+            description: "After picking a student, users can view their schedule and GPA",
             img: prjImg9
         }
     ]
     const project3 = [
         {
             title: "Explorify Park Menu",
-            description: "Green Tree School is a grading and GPA calculator web application",
+            description: "Explorify Park Menu mirrors a theme park concesson stand",
             img: prjImg10
         },
         {
             title: "Explorify Park Menu",
-            description: "Using Auth, users will need to register in order to access the review's sections of the site",
+            description: "Using the menu, users can add food, drink and snacks to their plate and then checkout",
             img: prjImg11
         },
     ]
