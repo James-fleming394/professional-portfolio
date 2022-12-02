@@ -54,7 +54,7 @@ const Banner = () => {
                     <h1>{`Hello!  I'm James! `}<span className="text-rotate"
                     data-rotate='["Full-Stack Developer", "Web Developer", "Software Engineer"]'></span></h1>
                     <p>I am a Full-Stack Developer</p>
-                    <button onClick={() => console.log('button working')}>Connect Here</button>
+                    <button className="resume-button" onClick={() => console.log('button working')}>Download my Resume</button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <img src={headerImg} alt="Banner Img" /> 
