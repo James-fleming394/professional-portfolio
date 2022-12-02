@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from 'react-bootstrap/Nav'
 import { Container, Row, Col, Tab } from "react-bootstrap"
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
     const projects = [
@@ -27,7 +28,6 @@ const Projects = () => {
                 <Row>
                     <Col>
                     <h2>Projects</h2>
-                    <p>Example projects here</p>
                 <Tab.Container id="project-tabs" defaultActiveKey="first">
                     <Nav variant="pills" defaultActiveKey="/home">
                     <Nav.Item>
@@ -46,7 +46,10 @@ const Projects = () => {
                             {
                                 projects.map((project, index) => {
                                     return (
-                                        <h6>{project.title}</h6>
+                                        <ProjectCard
+                                        key={index}
+                                        {...project}
+                                        />
                                     )
                                 })
                             }
