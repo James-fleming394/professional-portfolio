@@ -44,7 +44,7 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
             <Nav.Link href="/" className={activeUser === 'home' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('home')}>Home</Nav.Link>
-            <Nav.Link href="/about" className={activeUser === 'about' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('about')}>About</Nav.Link>
+            <Nav.Link href="/about" className={activeUser === 'about' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('about')}>Skills</Nav.Link>
             <Nav.Link href="/projects" className={activeUser === 'projects' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('projects')}>Projects</Nav.Link>
             </Nav>
         <span className="navbar-text">

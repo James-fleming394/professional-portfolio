@@ -191,7 +191,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
     margin-top: 0;
-    padding: 260px 0 100px 0;
+    padding: 200px 0 100px 0;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -201,7 +201,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-weight: 700;
     letter-spacing: 0.8px;
     padding: 8px 10px;
-    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    background: linear-gradient(90.21deg, rgba(70, 226, 205, 0.5) -5.91%, rgba(186, 238, 212, 0.5) 111.58%);
     border: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 20px;
     margin-bottom: 16px;
@@ -218,7 +218,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner p {
-    color: #B8B8B8;
+    color: #6f6565;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -226,7 +226,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button {
-    color: #fff;
+    color: black;
     font-weight: 700;
     font-size: 20px;
     margin-top: 60px;
@@ -270,7 +270,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Skills CSS */
 
 .skill {
-    padding: 0 0 50px 0;
+    margin-top: 0;
+    padding: 250px 0 50px 0;
     position: relative;
 }
 
@@ -314,7 +315,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Projects CSS */
 
 .project {
-    padding: 80px 0;
+    padding: 150px 0;
     position: relative;
     background-color: darkgray;
 }
@@ -453,7 +454,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact {
     background: linear-gradient(90.21deg, hsl(173, 70%, 57%) -5.91%, hsl(240, 4%, 16%) 111.58%);
-    padding: 60px 0 200px 0;
+    padding: 100px 0 200px 0;
 }
 
 .contact img {
@@ -540,13 +541,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 15px 0 0px 0;
     background-color: darkgray;
     background-size: cover;
-    background-repeat: no-repeat;
-    display: grid;
-    justify-content: center;
+    width: 100%;
+    position: absolute;
+
 }
 
 .footer img {
-    width: 26%;
+    width: 20%;
 }
 
 .footer p {
