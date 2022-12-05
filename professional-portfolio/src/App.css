@@ -246,11 +246,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-left: 25px;
 }
 
-.banner img {
-    animation: updown 3s linear infinite;
-}
-
-@keyframes updown {
+@keyframes bounce  {
     0% {
         transform: translateY(-20px);
     }
@@ -260,6 +256,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
+}
+
+.banner img {
+    animation: bounce 3s linear infinite;
 }
 
 .txt-rotate > .wrap {
