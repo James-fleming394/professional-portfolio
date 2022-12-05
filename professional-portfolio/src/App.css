@@ -533,3 +533,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
     width: 100%;
 }
+
+/* Footer CSS */
+
+.footer {
+    padding: 15px 0 0px 0;
+    background-color: darkgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+}
+
+.footer img {
+    width: 26%;
+}
+
+.footer p {
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
