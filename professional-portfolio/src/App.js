@@ -1,12 +1,12 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import Banner from './components/Banner';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import BannerPage from './pages/Banner-page';
+import About from './pages/About';
+import ProjectPage from './pages/Projects-page';
+import ContactPage from './pages/Contact-page';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Route, Routes} from 'react-router-dom';
 
 function App() {
 
@@ -16,10 +16,12 @@ function App() {
       <NavBar />
     </div>
     <div>
-      <Banner />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Routes>
+        <Route path='/' element={<BannerPage />}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/projects' element={<ProjectPage />}></Route>
+        <Route path='/contact' element={<ContactPage />}></Route>
+      </Routes>
       </div>
       <div>
         <Footer />
