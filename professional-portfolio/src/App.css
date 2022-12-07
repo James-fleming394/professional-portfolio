@@ -191,7 +191,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
     margin-top: 0;
-    padding: 200px 0 100px 0;
+    padding: 150px 0 100px 0;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -231,8 +231,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 20px;
     margin-top: 60px;
     letter-spacing: 0.8px;
+    padding: 10px;
     display: flex;
     align-items: center;
+    background: linear-gradient(90.21deg, rgba(70, 226, 205, 0.5) -5.91%, rgba(186, 238, 212, 0.5) 111.58%);
 }
 
 .banner button svg {
@@ -246,7 +248,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-left: 25px;
 }
 
-@keyframes bounce  {
+@keyframes updown  {
     0% {
         transform: translateY(-20px);
     }
@@ -259,7 +261,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner img {
-    animation: bounce 3s linear infinite;
+    animation: updown 3s linear infinite;
 }
 
 .txt-rotate > .wrap {
@@ -271,7 +273,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill {
     margin-top: 0;
-    padding: 250px 0 50px 0;
+    padding: 20px 0 50px 0;
     position: relative;
 }
 
@@ -317,7 +319,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
     padding: 150px 0;
     position: relative;
-    background-color: darkgray;
+    background-color: white;
 }
 
 .project h2 {
@@ -326,7 +328,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
 }
 .project p {
-    color: #B8B8B8;
+    color: white;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;

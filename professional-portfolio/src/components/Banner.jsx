@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap"
 import headerImg from '../assets/img/header.png'
 import 'animate.css';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 import { useState, useEffect } from "react";
 
@@ -61,9 +62,10 @@ const Banner = () => {
                     <p>I am a software developer with an interest in web and game design and a passion for education, 
                     gaming and sports.
                     I am looking forward to further developing my design and coding skills, so I can bring my passions into the 
-                    tech world.  
-                    <br></br>Check out my projects, skills and resume!  </p>
-                    <button>View My Resume</button>
+                    tech world. 
+                    </p> 
+                    <h4>Check out my projects, skills and resume!</h4>
+                    <button>View My Resume <ArrowRightCircle size={25} /></button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <TrackVisibility>
