@@ -225,6 +225,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 96%;
 }
 
+.banner h4 {
+    color: #6f6565;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
 .banner button {
     color: black;
     font-weight: 700;
@@ -270,6 +279,55 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /* Skills CSS */
+
+.about {
+    margin-top: 0;
+    padding: 150px 0 100px 0;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(70, 226, 205, 0.5) -5.91%, rgba(186, 238, 212, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.about h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.about p {
+    color: #6f6565;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
+.about h4 {
+    color: #6f6565;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.about img {
+    padding-left: 150px;
+}
 
 .skill {
     margin-top: 0;

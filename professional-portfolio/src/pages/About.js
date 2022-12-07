@@ -7,7 +7,7 @@ import HEADSHOT from '../assets/img/headshot.png'
 const About = () => {
     return (
         <>
-        <section className="banner" id="home">
+        <section className="about" id="home">
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
@@ -20,7 +20,8 @@ const About = () => {
                         and coach have taught me the value of collaboaration, teamwork, communication and problem-solving in
                         the workplace.  I am looking forward to further developing my design and coding skills, so I can continue
                         to bring my passions into the tech world. 
-                        <h5>I look forward to speaking with you!</h5> 
+                        <br></br>
+                        Feel free to reach out to me with an inquiries or questions!
                         </p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
