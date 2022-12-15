@@ -635,3 +635,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     letter-spacing: 0.5px;
 
 }
+
+/* Resume */
+
+.resume {
+    padding: 150px 30px 0 30px;
+}

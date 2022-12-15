@@ -8,18 +8,21 @@ import ContactPage from './pages/Contact-page';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes} from 'react-router-dom';
+import Resume from './pages/Resume';
 
 function App() {
 
 
   return (
-    <><div>
+    <>
+    <div>
       <NavBar />
     </div>
     <div>
       <Routes>
         <Route path='/' element={<BannerPage />}></Route>
         <Route path='/about' element={<About />}></Route>
+        <Route path='/resume' element={<Resume />}></Route>
         <Route path='/skills' element={<Skills />}></Route>
         <Route path='/projects' element={<ProjectPage />}></Route>
         <Route path='/contact' element={<ContactPage />}></Route>
@@ -27,7 +30,8 @@ function App() {
       </div>
       <div>
         <Footer />
-      </div></>
+      </div>
+      </>
   );
 }
 
