@@ -5,6 +5,7 @@ import 'animate.css';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import TrackVisibility from 'react-on-screen';
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -14,6 +15,8 @@ const Banner = () => {
     const [index, setIndex] = useState(1);
     const toRotate = [ "Full Stack Developer", "Web Developer", "Software Engineer" ];
     const period = 2000;
+
+    let navigate = useNavigate();
 
     useEffect(() => {
     let ticker = setInterval(() => {
@@ -65,7 +68,7 @@ const Banner = () => {
                     tech world. 
                     </p> 
                     <h4>Check out my projects, skills and resume!</h4>
-                    <button >View My Resume <ArrowRightCircle size={25} /></button>
+                    <button onClick={() => navigate('/resume')} >View My Resume <ArrowRightCircle size={25} /></button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <TrackVisibility>
