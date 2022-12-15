@@ -1,5 +1,4 @@
 import React from "react";
-import Skills from "../components/Skills";
 import { Container, Row, Col } from "react-bootstrap"
 import 'animate.css';
 import HEADSHOT from '../assets/img/headshot.png'
@@ -30,9 +29,6 @@ const About = () => {
                 </Row>
             </Container>
         </section>
-        <div>
-                <Skills />
-            </div>
             </>
     )
 }

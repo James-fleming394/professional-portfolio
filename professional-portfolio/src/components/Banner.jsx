@@ -65,7 +65,7 @@ const Banner = () => {
                     tech world. 
                     </p> 
                     <h4>Check out my projects, skills and resume!</h4>
-                    <button>View My Resume <ArrowRightCircle size={25} /></button>
+                    <button >View My Resume <ArrowRightCircle size={25} /></button>
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <TrackVisibility>

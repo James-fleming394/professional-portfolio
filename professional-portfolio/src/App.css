@@ -331,7 +331,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill {
     margin-top: 0;
-    padding: 20px 0 50px 0;
+    padding: 200px 0 50px 0;
     position: relative;
 }
 
@@ -340,7 +340,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-radius: 50px;
     text-align: center;
     padding: 60px 50px;
-    margin-top: -60px;
+    margin-top: -250px;
 }
 
 .skill h2 {
@@ -465,6 +465,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     height: 250px;
 }
 
+.project-image {
+    height: 100%;
+    width: 100%;
+}
+
 .proj-imgbx::before {
     content: "";
     background: linear-gradient(90.21deg, hsl(173, 70%, 57%) -5.91%, hsl(240, 4%, 16%) 111.58%);
@@ -510,10 +515,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     letter-spacing: 0.8px;
 }
 
+.project-links {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* Contact CSS */
 
 .contact {
-    background: linear-gradient(90.21deg, hsl(173, 70%, 57%) -5.91%, hsl(240, 4%, 16%) 111.58%);
+    background: whitesmoke;
     padding: 100px 0 200px 0;
 }
 
@@ -527,12 +537,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin-bottom: 30px;
 }
 
+.email-link {
+    padding-top: 50px;
+}
+
+.personal-links {
+    padding-top: 150px;
+}
+
 .contact form input, .contact form textarea {
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 0 0 8px 0;
     padding: 18px 26px;
     font-weight: 500;
@@ -550,7 +568,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form input::placeholder, .contact form textarea::placeholder {
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
@@ -602,12 +620,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background-color: darkgray;
     background-size: cover;
     width: 100%;
-    position: absolute;
-
+    position: relative;
+    margin-top: 150px;
 }
 
 .footer img {
-    width: 20%;
+    width: 15%;
 }
 
 .footer p {
@@ -615,5 +633,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 14px;
     color: black;
     letter-spacing: 0.5px;
-    margin-top: 20px;
+
 }

@@ -8,16 +8,49 @@ import prjImg3 from '../assets/img/Brewski-signin.png';
 import prjImg4 from '../assets/img/Brewski-breweries.png';
 import prjImg5 from '../assets/img/Brewski-brewery.png';
 import prjImg6 from '../assets/img/Brewski-profile.png';
-import prjImg7 from '../assets/img/home-pageschool.png';
-import prjImg8 from '../assets/img/course-page.png';
-import prjImg9 from '../assets/img/student-page.png';
-import prjImg10 from '../assets/img/Menu.png';
-import prjImg11 from '../assets/img/plate.png';
+import prjImg7 from '../assets/img/Marvel-Engine-Home.png';
+import prjImg8 from '../assets/img/Marvel-Engine-Cat.png';
+import prjImg9 from '../assets/img/Marvel-Engine-Comics.png';
+import prjImg10 from '../assets/img/Marvel-Engine-Toys.png';
+import prjImg11 from '../assets/img/Marvel-Engine-Apparel.png';
+import prjImg12 from '../assets/img/Marvel-Engine-Add.png';
 
 const Projects = () => {
     const project1 = [
         {
-            title: "Brewski",
+            title: "Marvel Engine",
+            description: "Marvel Engine is an online store for Marvel Products",
+            img: prjImg7
+        },
+        {
+            title: "Marvel Engine",
+            description: "Use the category selection page to choose which items you'd like to shop",
+            img: prjImg8
+        },
+        {
+            title: "Marvel Engine",
+            description: "The Comics page has sales on all Marvel Comics.  Users can add, update and delete comics using CRUD functions",
+            img: prjImg9
+        },
+        {
+            title: "Marvel Engine",
+            description: "The Toys page has sales on all Marvel Toys.  Users can add, update and delete toys using CRUD functions",
+            img: prjImg10
+        },
+        {
+            title: "Marvel Engine",
+            description: "The Apparel page has sales on all Marvel apparel pieces.  Users can add, update and delete apparel using CRUD functions",
+            img: prjImg11
+        },
+        {
+            title: "Marvel Engine",
+            description: "The Cart on Marvel Engine allows users to add, delete and increase the quantity of the items they want to purchase",
+            img: prjImg12
+        },
+    ]
+    const project2 = [
+        {
+            title: "",
             description: "Brewksi is an online Brewery Review platform",
             img: prjImg1
         },
@@ -47,34 +80,8 @@ const Projects = () => {
             img: prjImg6
         }
     ]
-    const project2 = [
-        {
-            title: "Green Tree School",
-            description: "Green Tree School is a grading and GPA calculator web application",
-            img: prjImg7
-        },
-        {
-            title: "Green Tree School",
-            description: "Users can navigate through a school's grading system to see courses and students within each course",
-            img: prjImg8
-        },
-        {
-            title: "Green Tree School",
-            description: "After picking a student, users can view their schedule and GPA",
-            img: prjImg9
-        }
-    ]
     const project3 = [
-        {
-            title: "Explorify Park Menu",
-            description: "Explorify Park Menu mirrors a theme park concesson stand",
-            img: prjImg10
-        },
-        {
-            title: "Explorify Park Menu",
-            description: "Using the menu, users can add food, drink and snacks to their plate and then checkout",
-            img: prjImg11
-        },
+        
     ]
 
     return (
@@ -109,6 +116,11 @@ const Projects = () => {
                                 })
                             }
                         </Row>
+                        <div className="project-links">
+                        <a href="https://marvel-engine-app.herokuapp.com/">Deployed Website</a>
+                        <a href="https://github.com/James-fleming394/marvel-ecommerce-backend">Backend GitHub</a>
+                        <a href="https://github.com/James-fleming394/marvel-ecommerce-app-frontend">Frontend GitHub</a>
+                        </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                         <Row>
@@ -123,6 +135,11 @@ const Projects = () => {
                                 })
                             }
                         </Row>
+                        <div className="project-links">
+                        <a href="https://marvel-engine-app.herokuapp.com/">Deployed Website</a>
+                        <a href="https://github.com/James-fleming394/marvel-ecommerce-backend">Backend GitHub</a>
+                        <a href="https://github.com/James-fleming394/marvel-ecommerce-app-frontend">Frontend GitHub</a>
+                        </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                         <Row>
@@ -137,6 +154,11 @@ const Projects = () => {
                                 })
                             }
                         </Row>
+                        <div className="project-links">
+                        <a className="link" href="https://marvel-engine-app.herokuapp.com/">Deployed Website</a>
+                        <a href="https://github.com/James-fleming394/marvel-ecommerce-backend">Backend GitHub</a>
+                        <a href="https://github.com/James-fleming394/marvel-ecommerce-app-frontend">Frontend GitHub</a>
+                        </div>
                     </Tab.Pane>
                 </Tab.Content>
                 </Tab.Container>

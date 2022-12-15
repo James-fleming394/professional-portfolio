@@ -39,12 +39,13 @@ const NavBar = () => {
             <img className="logo" src={laptop} alt="laptop" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggle-icon">Icon goes here</span>
+            <span className="navbar-toggle-icon">▼</span>
             </Navbar.Toggle> 
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
             <Nav.Link href="/" className={activeUser === 'home' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('home')}>Home</Nav.Link>
-            <Nav.Link href="/about" className={activeUser === 'about' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('about')}>Skills</Nav.Link>
+            <Nav.Link href="/about" className={activeUser === 'about' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('about')}>About</Nav.Link>
+            <Nav.Link href="/skills" className={activeUser === 'skills' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('skills')}>Skills</Nav.Link>
             <Nav.Link href="/projects" className={activeUser === 'projects' ? 'active-navbar-link': 'navbar-link'} onClick={() => onUpdateActiveUser('projects')}>Projects</Nav.Link>
             </Nav>
         <span className="navbar-text">

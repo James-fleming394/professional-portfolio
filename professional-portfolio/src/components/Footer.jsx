@@ -17,7 +17,7 @@ const Footer = () => {
                             <a href="https://www.linkedin.com/in/james--fleming/"><img src={icon1} alt="LinkedIn"></img></a>
                             <a href="https://github.com/James-fleming394"><img src={icon} alt="Github"></img></a>
                         </div>
-                        <p>A Website by James Fleming, Full-Stack Developer</p>
+                        <p>Copyright, © James Fleming, Full-Stack Developer</p>
                     </Col>
                 </Row>
             </Container>
