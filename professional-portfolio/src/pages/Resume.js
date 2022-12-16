@@ -4,6 +4,7 @@ const Resume = () => {
     return (
         <div className="resume">
             <div className="title-area">
+            <div><a href="https://docs.google.com/document/d/17ii3UCdBJS_OBXJ-V9FwXIBt8uHo5talMlCPj8W_V68/edit?usp=sharing">Link to my Downloadable Resume Here</a></div>
             <h1>James Fleming</h1>
             <h3>Full-Stack Developer</h3>
             <span className="number-email">
@@ -15,7 +16,7 @@ const Resume = () => {
             </span>
             </div>
             <section className="tagline">
-                <p className="tagline">
+                <p className="tag-line">
                 I am a software developer with an interest in web and game design and a passion for education, gaming and sports.  
                 Before transitioning to software engineering, I worked as an elementary school teacher and high school sports coach.  
                 My experience as a teacher has taught me the importance of teamwork, collaboration, communication, and 
