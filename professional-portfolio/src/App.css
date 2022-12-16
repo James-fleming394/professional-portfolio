@@ -641,3 +641,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .resume {
     padding: 150px 30px 0 30px;
 }
+
+.title-area {
+    text-align: center;
+}
+
+.number-email {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.tagline {
+    text-indent: 5%;
+}

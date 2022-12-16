@@ -3,7 +3,7 @@ import React from "react";
 const Resume = () => {
     return (
         <div className="resume">
-            <div>
+            <div className="title-area">
             <h1>James Fleming</h1>
             <h3>Full-Stack Developer</h3>
             <span className="number-email">
@@ -15,7 +15,7 @@ const Resume = () => {
             </span>
             </div>
             <section className="tagline">
-                <p>
+                <p className="tagline">
                 I am a software developer with an interest in web and game design and a passion for education, gaming and sports.  
                 Before transitioning to software engineering, I worked as an elementary school teacher and high school sports coach.  
                 My experience as a teacher has taught me the importance of teamwork, collaboration, communication, and 
@@ -24,7 +24,7 @@ const Resume = () => {
                 </p>
             </section>
             <section className="skill-resume">
-                <h3>Skills:</h3>
+                <h3>Skills</h3>
                 <p>Languages - JavaScript, HTML, CSS, Python, SQL, Mongo, JSON, Typescript, EJS, DTL | Database -  PostgreSQL,  MongoDB</p>
                 <p>Libraries and Frameworks - React (class based and hooks),  Express.js, Django, Jquery, Bootstrap</p>
                 <p>Other - RESTful Routing, JSON api</p>
@@ -37,7 +37,7 @@ const Resume = () => {
                         <li><p>Made RESTful API fetch calls to an Express, MongoDB, Node.js backend handling all create, read, update, delete (CRUD) operations, and tested all backend routes during development using Insomnia.</p></li>
                         <li><p>Used Mongoose to define schemas for MongoDB collections.</p></li>
                     </ul>
-                <h6><a href="">Brewski Brewery Reviews</a></h6>
+                <h6>Brewski Brewery Reviews</h6>
                     <ul>
                         <li><p>Utilized React.js components for the front-end of a user-friendly, well designed application that allows clients to search for breweries in their area, view a list of beers on tap and leave reviews for other users to view.</p></li>
                         <li><p>Utilized HTML, CSS and Javascript to create, style and add functionality to an online application.</p></li>
