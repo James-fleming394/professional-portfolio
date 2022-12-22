@@ -198,7 +198,7 @@ const Projects = () => {
                 </Tab.Content>
                 </Tab.Container>
                     </Col>
-                </Row>
+                </Row>  
             </Container>
         </section>
     )
