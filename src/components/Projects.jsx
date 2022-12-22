@@ -14,6 +14,12 @@ const prjImg9 = '/img/Marvel-Engine-Comics.png';
 const prjImg10 = '/img/Marvel-Engine-Toys.png';
 const prjImg11 = '/img/Marvel-Engine-Apparel.png';
 const prjImg12 = '/img/Marvel-Engine-Add.png';
+const prjImg13 = '/img/Trava-Header.png';
+const prjImg14 = '/img/Trava-Featured.png';
+const prjImg15 = '/img/Trava-News.png';
+const prjImg16 = '/img/Trava-hotel.png';
+const prjImg17 = '/img/Trava-hotel1.png';
+const prjImg18 = '/img/Trava-checkout.png';
 
 const Projects = () => {
     const project1 = [
@@ -81,7 +87,36 @@ const Projects = () => {
         }
     ]
     const project3 = [
-        
+        {
+            title: "Trava Travel App",
+            description: "Trava is a travel application allowing users to search for stays in various cities",
+            img: prjImg13
+        },
+        {
+            title: "Trava Travel App",
+            description: "The Homepage offers a view of Featured Locations and allows users to browse properties by type",
+            img: prjImg14
+        },
+        {
+            title: "Trava Travel App",
+            description: "The Homepage offers a view of Featured Stays and user feedbakc on thoe Stays",
+            img: prjImg15
+        },
+        {
+            title: "Trava Travel App",
+            description: "The Hotels page allows users to see all the hotels available in the city of their choosing",
+            img: prjImg16
+        },
+        {
+            title: "Trava Travel App",
+            description: "Users can view a single hotel and see photos of said hotel",
+            img: prjImg17
+        },
+        {
+            title: "Trava Travel App",
+            description: "Users can checkout by selecting a room sizes, price and number of occupants",
+            img: prjImg18
+        },
     ]
 
     return (
@@ -136,9 +171,9 @@ const Projects = () => {
                             }
                         </Row>
                         <div className="project-links">
-                        <a href="https://marvel-engine-app.herokuapp.com/">Deployed Website</a>
-                        <a href="https://github.com/James-fleming394/marvel-ecommerce-backend">Backend GitHub</a>
-                        <a href="https://github.com/James-fleming394/marvel-ecommerce-app-frontend">Frontend GitHub</a>
+                        <a href="https://brewski.herokuapp.com/">Deployed Website</a>
+                        <a href="https://github.com/VillagomezHJonathan/brewski-backend">Backend GitHub</a>
+                        <a href="https://github.com/VillagomezHJonathan/brewski-frontend">Frontend GitHub</a>
                         </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
@@ -155,9 +190,9 @@ const Projects = () => {
                             }
                         </Row>
                         <div className="project-links">
-                        <a className="link" href="https://marvel-engine-app.herokuapp.com/">Deployed Website</a>
-                        <a href="https://github.com/James-fleming394/marvel-ecommerce-backend">Backend GitHub</a>
-                        <a href="https://github.com/James-fleming394/marvel-ecommerce-app-frontend">Frontend GitHub</a>
+                        <a className="link" href="">Deployment Still in Progress</a>
+                        <a href="https://github.com/James-fleming394/travel-booking-app-backend">Backend GitHub</a>
+                        <a href="https://github.com/James-fleming394/travel-booking-app-frontend">Frontend GitHub</a>
                         </div>
                     </Tab.Pane>
                 </Tab.Content>

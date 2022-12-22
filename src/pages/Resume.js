@@ -38,11 +38,17 @@ const Resume = () => {
                         <li><p>Made RESTful API fetch calls to an Express, MongoDB, Node.js backend handling all create, read, update, delete (CRUD) operations, and tested all backend routes during development using Insomnia.</p></li>
                         <li><p>Used Mongoose to define schemas for MongoDB collections.</p></li>
                     </ul>
-                <h6>Brewski Brewery Reviews</h6>
+                <h6><a href="https://brewski.herokuapp.com/">Brewski Brewery Reviews</a></h6>
                     <ul>
-                        <li><p>Utilized React.js components for the front-end of a user-friendly, well designed application that allows clients to search for breweries in their area, view a list of beers on tap and leave reviews for other users to view.</p></li>
-                        <li><p>Utilized HTML, CSS and Javascript to create, style and add functionality to an online application.</p></li>
+                        <li><p>Applied React.js components for the front-end of a user-friendly, well designed application that allows clients to search for breweries in their area, view a list of beers on tap and leave reviews for other users to view.</p></li>
+                        <li><p>Incorporated HTML, CSS and Javascript to create, style and add functionality to an online application.</p></li>
                         <li><p>Made RESTful API fetch calls to an Express, PostgreSQL, Node.js backend handling all create, read, update, delete (CRUD) operations, and tested all backend routes during development using Insomnia.</p></li>
+                    </ul>
+                <h6><a href="https://github.com/James-fleming394/travel-booking-app-frontend">Trava Travel App</a></h6>
+                    <ul>
+                        <li><p>Created an online travel and booking application that allows users to search for, view and book hotels, villas, apartments, cabins and resorts in cities around the world.  </p></li>
+                        <li><p>Used React.js to implement the front-end with Javascript methods and functions to create a stunning user interface.</p></li>
+                        <li><p>Served the back-end of the application using MongoDB andExpress methods and functions utilizing database management and CRUD functionality..</p></li>
                     </ul>
             </section>
             <section className="experience">
